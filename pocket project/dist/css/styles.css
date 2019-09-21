@@ -1,0 +1,130 @@
+.hidden {
+  visibility: hidden;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  
+}
+
+
+.clock-holder {
+  margin: 50px;
+  margin-left: 30px;
+  border: 1px solid black;
+  padding: 10px;
+  vertical-align: middle;
+
+} 
+
+.clock-holder#clock {
+  vertical-align: middle;
+}
+
+.drop-down-dog-nav {
+  position: relative;
+  width: 200px;
+  height: 30px;
+  border: 1px solid black;
+  margin: 50px;
+  margin-right: 30px;
+  cursor: pointer;
+  background-color: white;
+  color: black;
+}
+
+.drop-down-dog-nav h3 {
+  padding: 8px 0;
+}
+
+.drop-down-dog-list {
+  position: absolute;
+  top: 30px;
+  left: -1px;
+  width: 200px;
+  background-color: white;
+  border: 1px solid black;
+  border-top: none;
+}
+
+.todo-container {
+  max-width: 50%;
+  margin: 50px auto 0px;
+  background: #DDDDDD;
+  padding: 40px;
+  border: 1px solid black;
+}
+
+.todo-container ul {
+  margin-bottom: 10px;
+}
+
+html {
+  box-sizing: border-box;
+  background: #ECB572;
+  text-align: center;
+}
+
+h1 {
+  color: #F0F2EF;
+  font-family: 'helvetica neue';
+  font-weight: 700;
+  margin-top: 20px;
+  font-size: 48px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-around;
+}
+
+.welcome {
+  font-weight: 700;
+  margin-top: 100px;
+  font-size: 48px;
+}
+
+.welcome > h1 {
+  font-size: 48px;
+}
+
+/*  Phase 4: Slide In & Out Classes */
+
+.align-left {
+  float: left;
+  margin-right: 20px;
+}
+
+.align-right {
+  float: right;
+  margin-left: 20px;
+}
+
+.slide {
+  opacity: 0;
+  transition: all .5s;
+}
+
+.align-left.slide {
+  transform: translateX(-30%) scale(0.95);
+}
+
+.align-right.slide {
+  transform: translateX(30%) scale(0.95);
+}
+
+.slide-and-scroll {
+  width: 70%;
+  margin: 0 auto;
+  margin: 50px auto 0px;
+  background: #DDDDDD;
+  border: 1px solid black;
+  padding: 40px;
+  font: 'helvetica neue';
+}
+
+.slide.active {
+  opacity: 1;
+  transform: translateX(0%) scale(1);
+}
